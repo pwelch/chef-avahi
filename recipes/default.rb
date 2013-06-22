@@ -9,7 +9,7 @@ package "avahi-daemon" do
   action :install
 end
 
-if node['avahi']['disable-service']
+if node['avahi']['disable_service']
   service "avahi-daemon" do
     action [:disable, :stop]
   end

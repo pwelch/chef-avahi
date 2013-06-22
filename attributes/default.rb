@@ -1,5 +1,5 @@
 
-node.default['avahi']['disable-service'] = false
+node.default['avahi']['disable_service'] = false
 
 # avahi-daemon.conf values
 node.default['avahi']['hostname'] = node['hostname']
