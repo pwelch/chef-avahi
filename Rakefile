@@ -13,11 +13,16 @@ namespace :test do
     sh "bundle exec rspec spec/"
   end
 
+  desc "Runs Foodcritic tests"
+  task :foodcritic do
+    sh "bundle exec foodcritic --epic-fail any ."
+  end
+
   desc "Runs all tests"
   task :all do
     puts "==== Running all tests"
 
-    %w{ knife chefspec }.each do |task|
+    %w{ knife chefspec foodcritic }.each do |task|
       Rake::Task["test:#{task}"].execute
     end
   end
