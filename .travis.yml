@@ -5,5 +5,4 @@ rvm:
   - 1.9.3
 script:
   - bundle exec rake test:knife
-  - bundle exec rake test:chefspec
   - bundle exec rake test:foodcritic
