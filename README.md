@@ -1,4 +1,3 @@
-[![Build Status](https://travis-ci.org/pwelch/chef-avahi.png)](https://travis-ci.org/pwelch/chef-avahi)
 
 # Description
 
