@@ -9,7 +9,7 @@ Include `avahi::default` recipe in the `run_list`.
 To disable the avahi-daemon set the attribute like so:
 
 ```
-  default['avahi']['disable-service'] = true
+  default['avahi']['disable_service'] = true
 ```
 
 ## Contributing
