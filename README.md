@@ -1,7 +1,8 @@
+[![Build Status](https://secure.travis-ci.org/pwelch/chef-avahi.png)](http://travis-ci.org/pwelch/chef-avahi)
 
 # Description
 
-Installs [avahi](http://avahi.org/) the zeroconf software.
+Chef cookbook that installs and configures [avahi](http://avahi.org/) the zeroconf software.
 
 # Usage
 
@@ -20,6 +21,8 @@ To disable the avahi-daemon set the attribute like so:
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
+
+Source code availabe [here](https://github.com/pwelch/chef-avahi)
 
 ## To Do
 
