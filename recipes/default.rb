@@ -2,8 +2,6 @@
 # Cookbook Name:: avahi
 # Recipe:: default
 #
-# All rights reserved - Do Not Redistribute
-#
 
 package "avahi-daemon" do
   action :install
