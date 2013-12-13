@@ -5,5 +5,5 @@ gem 'chefspec'
 gem 'strainer'
 
 group :integration do
-  gem 'kitchen-vagrant', '~> 0.11'
+  gem 'kitchen-vagrant'
 end
