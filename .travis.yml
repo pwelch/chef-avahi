@@ -4,4 +4,4 @@ gemfile:
 rvm:
   - 1.9.3
 script:
-  - bundle exec strainer test --except test-kitchen
+  - bundle exec strainer test --except knife-test test-kitchen
