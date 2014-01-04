@@ -1,4 +1,5 @@
 [![Build Status](https://secure.travis-ci.org/pwelch/chef-avahi.png)](http://travis-ci.org/pwelch/chef-avahi)
+[![Dependency Status](https://gemnasium.com/pwelch/chef-avahi.png)](https://gemnasium.com/pwelch/chef-avahi)
 
 ## Description
 Chef cookbook that installs and configures [avahi](http://avahi.org/) the zeroconf software.
