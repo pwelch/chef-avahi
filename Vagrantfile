@@ -1,6 +1,9 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
+Vagrant.require_plugin "vagrant-berkshelf"
+Vagrant.require_plugin "vagrant-omnibus"
+
 MEMORY = ENV['VAGRANT_MEMORY'] || '1024'
 CORES  = ENV['VAGRANT_CORES']  || '2'
 
