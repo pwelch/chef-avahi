@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'berkshelf', '~> 2.0'
+gem 'berkshelf' 
 gem 'chefspec', '~> 3.1'
 gem 'strainer'
 
