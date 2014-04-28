@@ -1,0 +1,9 @@
+DEPENDENCIES
+  apt
+  avahi
+    path: .
+    metadata: true
+
+GRAPH
+  apt (2.3.10)
+  avahi (1.0.0)
