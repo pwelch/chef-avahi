@@ -6,4 +6,4 @@ DEPENDENCIES
 
 GRAPH
   apt (2.3.10)
-  avahi (1.0.0)
+  avahi (1.0.1)
