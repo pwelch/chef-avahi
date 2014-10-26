@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe 'avahi::default' do
-  let(:chef_run)               { ChefSpec::Runner.new.converge(described_recipe) }
+  let(:chef_run)               { ChefSpec::SoloRunner.new.converge(described_recipe) }
 
   it "should install the avahi-daemon package" do
     expect(chef_run).to install_package 'avahi-daemon'
