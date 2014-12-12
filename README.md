@@ -2,6 +2,8 @@
 [![Dependency Status](https://gemnasium.com/pwelch/chef-avahi.png)](https://gemnasium.com/pwelch/chef-avahi)
 
 ## Description
+
+[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/pwelch/chef-avahi?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 Chef cookbook that installs and configures [avahi](http://avahi.org/) the zeroconf software.
 
 ## Usage
