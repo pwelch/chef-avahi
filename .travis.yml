@@ -1,7 +1,9 @@
 language: ruby
+bundler_args: --without development integration
 gemfile:
   - Gemfile
 rvm:
   - 2.1.5
 script:
-  - bundle exec strainer test --except knife-test test-kitchen
+  - bundle exec rake style
+  - bundle exec rake spec
