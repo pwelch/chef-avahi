@@ -1,3 +1,5 @@
+[![Cookbook](http://img.shields.io/cookbook/v/avahi.svg)](https://supermarket.chef.io/cookbooks/avahi)
+[![GitHub tag](https://img.shields.io/github/tag/pwelch/chef-avahi.svg)](https://github.com/pwelch/chef-avahi/releases)
 [![Build Status](https://secure.travis-ci.org/pwelch/chef-avahi.png)](http://travis-ci.org/pwelch/chef-avahi)
 [![Dependency Status](https://gemnasium.com/pwelch/chef-avahi.png)](https://gemnasium.com/pwelch/chef-avahi)
 
