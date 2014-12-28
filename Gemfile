@@ -1,14 +1,23 @@
 source 'https://rubygems.org'
 
-ruby '2.1.3'
+group :development do
+  gem 'rake'
+  gem 'pry'
+  gem 'pry-remote'
+end
 
-gem 'berkshelf'
-
-group :test do
-  gem 'chefspec', '~> 4.1'
+group :unit do
+  gem 'berkshelf'
+  gem 'chefspec', '~> 4.2'
   gem 'strainer'
 end
 
 group :integration do
-  gem 'kitchen-vagrant'
+  gem 'test-kitchen'
+  gem 'kitchen-vagrant', '~> 0.11'
+end
+
+group :lint do
+  gem 'foodcritic', '~> 4.0'
+  gem 'rubocop',    '~> 0.27.0'
 end
