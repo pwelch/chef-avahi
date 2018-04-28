@@ -4,7 +4,7 @@ maintainer_email 'git@pwelch.net'
 license          'Apache-2.0'
 description      'Installs/Configures avahi'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
-version          '1.0.3'
+version          '2.0.0'
 
 source_url 'https://github.com/pwelch/chef-avahi'
 issues_url 'https://github.com/pwelch/chef-avahi/issues'
