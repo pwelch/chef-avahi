@@ -1,3 +1,7 @@
+#
+# Cookbook Name:: avahi
+# Attribute:: default
+#
 
 node.default['avahi']['disable_service'] = false
 
