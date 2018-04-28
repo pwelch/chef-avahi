@@ -46,4 +46,15 @@ describe 'avahi::default' do
       end
     end
   end
+
+  context 'When all attributes are default, on an CentOS' do
+    cached(:chef_run) do
+      runner = ChefSpec::ServerRunner.new(platform: 'centos', version: '7.4.1708')
+      runner.converge(described_recipe)
+    end
+
+    it 'should install the avahi package' do
+      expect(chef_run).to install_package 'avahi'
+    end
+  end
 end

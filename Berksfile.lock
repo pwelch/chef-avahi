@@ -3,7 +3,9 @@ DEPENDENCIES
   avahi
     path: .
     metadata: true
+  yum
 
 GRAPH
   apt (7.0.0)
   avahi (1.0.3)
+  yum (5.1.0)

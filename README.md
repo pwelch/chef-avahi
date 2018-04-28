@@ -11,7 +11,7 @@ Include `avahi::default` recipe in the `run_list`.
 
 To disable the avahi-daemon set the attribute like so:
 ```
-  default['avahi']['disable_service'] = true
+  node.default['avahi']['disable_service'] = true
 ```
 
 ## Development
@@ -19,9 +19,11 @@ To disable the avahi-daemon set the attribute like so:
 Development requires [ChefDK](https://downloads.chef.io/chefdk)
 
 ## Testing
+
 Running tests:
 ```bash
 chef exec rake
+chef exec kitchen verify
 ```
 
 ## Contributing

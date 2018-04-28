@@ -1,7 +1,17 @@
 require 'spec_helper'
 
-describe package('avahi-daemon') do
-  it { should be_installed }
+if os.family == 'debian'
+  describe package('avahi-daemon') do
+    it { should be_installed }
+  end
+
+  describe host('avahi-test-kitchen.local') do
+    it { should be_resolvable }
+  end
+elsif os.family == 'redhat'
+  describe package('avahi') do
+    it { should be_installed }
+  end
 end
 
 describe file('/etc/avahi') do
@@ -18,8 +28,4 @@ end
 
 describe service('avahi-daemon') do
   it { should be_running }
-end
-
-describe host('ubuntu1404-test-kitchen.local') do
-  it { should be_resolvable }
 end

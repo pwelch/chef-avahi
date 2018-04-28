@@ -3,7 +3,7 @@
 # Recipe:: default
 #
 
-package 'avahi-daemon' do
+package node['avahi']['package_name'] do
   action :install
 end
 

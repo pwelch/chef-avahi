@@ -10,7 +10,7 @@ source_url 'https://github.com/pwelch/chef-avahi'
 issues_url 'https://github.com/pwelch/chef-avahi/issues'
 chef_version '>= 12.1' if respond_to?(:chef_version)
 
-%w(ubuntu debian).each do |os|
+%w(ubuntu debian redhat centos).each do |os|
   supports os
 end
 
