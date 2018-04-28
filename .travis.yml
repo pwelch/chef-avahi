@@ -1,14 +1,24 @@
-sudo: false
-branches:
-  except:
-    - gh-pages
-cache: bundler
-language: ruby
-rvm:
-  - 2.1.5
-before_install: gem update --remote bundler
-install:
-  - bundle install --retry=3 --without development integration
+sudo: required
+dist: trusty
+
+addons:
+  apt:
+    sources:
+      - chef-current-trusty
+    packages:
+      - chefdk
+
+# Don't `bundle install` which takes about 1.5 mins
+install: echo "skip bundle install"
+
+services: docker
+
+before_script:
+  - sudo iptables -L DOCKER || ( echo "DOCKER iptables chain missing" ; sudo iptables -N DOCKER )
+  - eval "$(chef shell-init bash)"
+  - chef --version
+  - cookstyle --version
+  - foodcritic --version
+
 script:
-  - bundle exec rake style
-  - bundle exec rake spec
+  - chef exec rake

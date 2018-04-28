@@ -12,3 +12,6 @@ bin/*
 .bundle/*
 tmp/
 .kitchen/*
+
+Berksfile.lock
+Gemfile.lock

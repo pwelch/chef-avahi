@@ -3,7 +3,7 @@
 # Recipe:: default
 #
 
-package 'avahi-daemon' do
+package node['avahi']['package_name'] do
   action :install
 end
 
@@ -21,11 +21,9 @@ template '/etc/avahi/avahi-daemon.conf' do
   source 'avahi-daemon.conf.erb'
   owner 'root'
   group 'root'
-  variables({
-    :hostname => node['avahi']['hostname'],
-    :domain   => node['avahi']['domain'],
-    :useipv4  => node['avahi']['useipv4'],
-    :useipv6  => node['avahi']['useipv6']
-  })
+  variables(hostname: node['avahi']['hostname'],
+            domain:   node['avahi']['domain'],
+            useipv4:  node['avahi']['useipv4'],
+            useipv6:  node['avahi']['useipv6'])
   notifies :restart, 'service[avahi-daemon]'
 end

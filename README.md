@@ -11,18 +11,19 @@ Include `avahi::default` recipe in the `run_list`.
 
 To disable the avahi-daemon set the attribute like so:
 ```
-  default['avahi']['disable_service'] = true
+  node.default['avahi']['disable_service'] = true
 ```
 
 ## Development
-Development requires [Vagrant](http://vagrantup.com/) and these vagrant-plugins:
-* `vagrant plugin install vagrant-berkshelf`
-* `vagrant plugin install vagrant-omnibus`
+
+Development requires [ChefDK](https://downloads.chef.io/chefdk)
 
 ## Testing
+
 Running tests:
 ```bash
-bundle exec strainer test
+chef exec rake
+chef exec kitchen verify
 ```
 
 ## Contributing
@@ -33,6 +34,3 @@ bundle exec strainer test
 5. Create new Pull Request
 
 Source code availabe [here](https://github.com/pwelch/chef-avahi)
-
-## To Do
-* Ensure support on other platforms (RHEL/Arch).
