@@ -3,14 +3,25 @@
 [![Build Status](https://secure.travis-ci.org/pwelch/chef-avahi.svg)](http://travis-ci.org/pwelch/chef-avahi)
 
 ## Description
+
 Chef cookbook that installs and configures [avahi](http://avahi.org/) the zeroconf software.
 
 ## Usage
+
 Include `avahi::default` recipe in the `run_list`.
 
 To disable the avahi-daemon set the attribute like so:
+
 ```
-  node.default['avahi']['disable_service'] = true
+node.default['avahi']['disable_service'] = true
+```
+
+### Avahi in Docker
+
+By default Avahi can only run in a single container as described [here](https://github.com/lxc/lxd/issues/2948#issuecomment-282386962). To get around this limitation you can disable the `rlimit` related config by adding:
+
+```
+node.default['avahi']['rlimit']['conf'] = false
 ```
 
 ## Development
@@ -20,6 +31,7 @@ Development requires [ChefDK](https://downloads.chef.io/chefdk)
 ## Testing
 
 Running tests:
+
 ```bash
 chef exec rake
 chef exec kitchen verify
