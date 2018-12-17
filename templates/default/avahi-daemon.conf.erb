@@ -55,11 +55,13 @@ enable-wide-area=yes
 #enable-reflector=no
 #reflect-ipv=no
 
+<%- if @rlimit['conf'] -%>
 [rlimits]
 #rlimit-as=
-rlimit-core=0
-rlimit-data=4194304
-rlimit-fsize=0
-rlimit-nofile=300
-rlimit-stack=4194304
-rlimit-nproc=3
+rlimit-core=<%= @rlimit['core'] %>
+rlimit-data=<%= @rlimit['data'] %>
+rlimit-fsize=<%= @rlimit['fsize'] %>
+rlimit-nofile=<%= @rlimit['nofile'] %>
+rlimit-stack=<%= @rlimit['stack'] %>
+rlimit-nproc=<%= @rlimit['nproc'] %>
+<%- end -%>
