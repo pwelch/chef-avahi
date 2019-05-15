@@ -1,6 +1,7 @@
 [![Cookbook](http://img.shields.io/cookbook/v/avahi.svg)](https://supermarket.chef.io/cookbooks/avahi)
 [![GitHub tag](https://img.shields.io/github/tag/pwelch/chef-avahi.svg)](https://github.com/pwelch/chef-avahi/releases)
 [![Build Status](https://secure.travis-ci.org/pwelch/chef-avahi.svg)](http://travis-ci.org/pwelch/chef-avahi)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fpwelch%2Fchef-avahi.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fpwelch%2Fchef-avahi?ref=badge_shield)
 
 ## Description
 Chef cookbook that installs and configures [avahi](http://avahi.org/) the zeroconf software.
@@ -33,3 +34,7 @@ chef exec kitchen verify
 5. Create new Pull Request
 
 Source code availabe [here](https://github.com/pwelch/chef-avahi)
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fpwelch%2Fchef-avahi.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fpwelch%2Fchef-avahi?ref=badge_large)
